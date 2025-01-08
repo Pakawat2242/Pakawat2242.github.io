@@ -1,0 +1,177 @@
+/* การตั้งค่ากล่องทั้งหมดให้เป็น border-box เพื่อจัดการขนาดให้ง่ายขึ้น */
+* {
+    box-sizing: border-box;
+}
+
+/* การตั้งค่าพื้นฐานสำหรับ body */
+body {
+    font-family: Arial;
+    /* เลือกฟอนต์ Arial */
+    padding: 0px;
+    /* ไม่มี padding */
+    margin: 0px;
+    /* ไม่มี margin */
+    background: #f1f1f1;
+    /* กำหนดสีพื้นหลัง */
+}
+
+.navbar1 {
+    display: flex;
+    flex-direction: column; /* จัดให้โลโก้และรายละเอียดอยู่ในแนวตั้ง */
+    justify-content: center; /* จัดกลางในแนวตั้ง */
+    align-items: center; /* จัดกลางในแนวนอน */
+    background-color: white;
+    border: 10px solid white;
+    padding: 0px 0;
+}
+
+/* โลโก้ */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 22%; /* กำหนดความกว้างของโลโก้ */
+    height: auto; /* ให้สูงปรับตามอัตราส่วน */
+}
+
+/* ส่วนรายละเอียด */
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px; /* ระยะห่างระหว่างโลโก้และข้อความ */
+}
+
+.detail h1 {
+    font-size: 30px;
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+/* Navigation bar ด้านบน */
+.topnav {
+    overflow: hidden;
+    /* ซ่อนส่วนเกิน */
+    background-color: darkblue;
+    /* สีพื้นหลังน้ำเงินเข้ม */
+    width: 100%;
+    /* ความกว้างเต็ม */
+    padding: 10px;
+    /* ระยะห่างด้านใน */
+}
+
+/* ลิงก์ใน Navigation bar */
+.topnav a {
+    float: left;
+    /* จัดให้อยู่ทางซ้าย */
+    display: block;
+    /* เป็นบล็อก */
+    color: #f2f2f2;
+    /* สีข้อความ */
+    text-align: center;
+    /* จัดข้อความให้อยู่กลาง */
+    padding: 14px 16px;
+    /* ระยะห่างด้านใน */
+    text-decoration: none;
+    /* ไม่มีขีดเส้นใต้ */
+}
+
+/* เปลี่ยนสีเมื่อ hover */
+.topnav a:hover {
+    background-color: #ddd;
+    /* เปลี่ยนเป็นสีเทาอ่อน */
+    color: black;
+    /* เปลี่ยนข้อความเป็นสีดำ */
+}
+
+/* คอลัมน์ซ้าย */
+.leftcolumn {
+    float: left;
+    /* จัดให้อยู่ซ้าย */
+    width: 75%;
+    /* ความกว้าง 75% */
+}
+
+/* คอลัมน์ขวา */
+.rightcolumn {
+    float: left;
+    /* จัดให้อยู่ซ้าย */
+    width: 25%;
+    /* ความกว้าง 25% */
+    background-color: #f1f1f1;
+    /* พื้นหลังสีเทาอ่อน */
+    padding-left: 20px;
+    /* ระยะห่างด้านใน */
+}
+
+/* รูปภาพตัวอย่าง */
+.fakeimg {
+    background-color: #aaa;
+    /* พื้นหลังสีเทาเข้ม */
+    width: 100%;
+    /* ความกว้างเต็ม */
+    padding: 20px;
+    /* ระยะห่างด้านใน */
+}
+
+/* การสร้างการ์ด */
+.card {
+    background-color: white;
+    /* พื้นหลังสีขาว */
+    padding: 20px;
+    /* ระยะห่างด้านใน */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+}
+
+/* เคลียร์ float หลังคอลัมน์ */
+.row:after {
+    content: "";
+    display: table;
+    /* ทำให้เป็นตาราง */
+    clear: both;
+    /* เคลียร์ float */
+}
+
+/* Footer */
+.footer {
+    padding: 5px;
+    /* ระยะห่างด้านใน */
+    text-align: center;
+    /* ข้อความอยู่ตรงกลาง */
+    background-color: darkblue;
+    /* พื้นหลังสีน้ำเงินเข้ม */
+    margin-top: 20px;
+    /* ระยะห่างด้านบน */
+    color: white;
+    /* ข้อความสีขาว */
+}
+
+/* สำหรับหน้าจอน้อยกว่า 800px */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        /* ความกว้างเต็ม */
+        padding: 0;
+        /* ไม่มี padding */
+    }
+}
+
+/* สำหรับหน้าจอน้อยกว่า 400px */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        /* ไม่จัดชิด */
+        width: 100%;
+        /* ความกว้างเต็ม */
+    }
+}
