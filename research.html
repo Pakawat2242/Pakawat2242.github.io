@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Research Areas</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: darkblue;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .logo {
+      background-color:darkblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .topnav {
+      overflow: hidden;
+      background-color: #C0C0C0;
+      display: flex;
+      justify-content:center;
+      padding: 10px 1px;
+    }
+
+    .topnav a {
+      color: black;
+      padding: 14px 20px;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+    }
+
+    .topnav a.right {
+      float: right;
+    }
+
+    /* Header */
+    .header {
+      background-color: darkblue;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: -10px;
+    }
+
+    /* Main Content */
+    .main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: darkblue;
+      color: white;
+    }
+
+    /* Responsive Layout */
+    @media screen and (max-width: 600px) {
+      .topnav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .topnav a.right {
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="logo">
+    <img src="image/mahidollogo.png" width="5%" height="5%">
+  </div>
+  <div class="header">
+    <h1>Our Research Areas</h1>
+    <p>Explore the groundbreaking work in our laboratory</p>
+  </div>
+
+    <!-- Navbar -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="https://www.tm.mahidol.ac.th/tropmed-staff/suangsuda-sup/Suangsuda-Supasai-Public.php" target="_blank">Publication</a>
+        <a href="event.html">Events</a>
+        <a href="member.html">About us</a>
+      </div>
+
+  <!-- Main Content -->
+  <h2 style="margin-top: 20px; margin-bottom: 5px; margin-left: 20px; margin-right: 20px;">Model</h2>
+  <div class="main">
+    <div class="card">
+      <img src="image/ADmodel.png" alt="Alzheimer's model">
+      <h3>Alzheimer's Model</h3>
+      <p>Studying Alzheimer's disease through innovative animal models.</p>
+    </div>
+    <div class="card">
+      <img src="image/PDmodel.png" alt="Parkinson's model">
+      <h3>Parkinson's Model</h3>
+      <p>Research on Parkinson's disease mechanisms and interventions.</p>
+    </div>
+    <div class="card">
+      <img src="image/Neuron.png" alt="Neuron">
+      <h3>Neuron</h3>
+      <p>Focusing on neuron development, function, and degeneration.</p>
+    </div>
+    <div class="card">
+      <img src="image/Microglia.png" alt="Microglia">
+      <h3>Microglia</h3>
+      <p>Investigating the role of microglia in neuroinflammation and disease.</p>
+    </div>
+  </div>
+  <h2 style="margin-top: 20px; margin-bottom: 5px; margin-left: 20px; margin-right: 20px;">Treatment</h2>
+  <div class="main">
+    <div class="card">
+        <img src="image/HMGB1BoxA.png" alt="HMGB1 BoxA">
+        <h3>HMGB1 BoxA</h3>
+        <p>Exploring sericin for its potential neuroprotective effects.</p>
+      </div>
+      <div class="card">
+        <img src="image/Sericin.png" alt="Sericin">
+        <h3>Sericin</h3>
+        <p>Innovative approaches to studying Pikudnawakot's role in medicine.</p>
+      </div>
+      <div class="card">
+        <img src="image/PN.png" alt="Pikudnawakot">
+        <h3>Pikudnawakot</h3>
+        <p>Innovative approaches to studying Pikudnawakot's role in medicine.</p>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Department of Molecular Tropical Medicine and Genetics, Mahidol University</p>
+    <p>&copy; 2025 All Rights Reserved</p>
+  </div>
+
+</body>
+</html>
